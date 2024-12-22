@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 
 @app.route('/personal-ai-assistant', methods=['GET'])
-def personal_ai_assistant(user_id):
+def personal_ai_assistant():
     try:
         return jsonify({"history": "hii"})
     except Exception as e:
